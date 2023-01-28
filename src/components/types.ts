@@ -1,10 +1,12 @@
 export interface ComponentStructure {
-  domElement: HTMLElement;
+  domElement: Element;
   render: () => void;
   addListeners?: () => void;
 }
 
 export interface PokemonDataStructure {
+  count: number;
+  next: string;
   results: PokemonInfo[];
 }
 

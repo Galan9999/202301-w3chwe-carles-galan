@@ -1,7 +1,14 @@
-interface ComponentStructure {
+export interface ComponentStructure {
   domElement: HTMLElement;
   render: () => void;
   addListeners?: () => void;
 }
 
-export default ComponentStructure;
+export interface PokemonDataStructure {
+  results: PokemonInfo[];
+}
+
+export interface PokemonInfo {
+  name: string;
+  url: string;
+}

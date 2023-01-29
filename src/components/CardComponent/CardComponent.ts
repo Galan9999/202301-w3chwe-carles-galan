@@ -5,7 +5,7 @@ import type { PokemonInfoStructure } from "../../PokemonInfo/types.js";
 class CardComponent extends Component implements CardComponentStructure {
   pokemon: PokemonInfoStructure;
   constructor(parentElement: Element, pokemon: PokemonInfoStructure) {
-    super(parentElement, "li", "card");
+    super(parentElement, "card", "li");
     this.pokemon = pokemon;
     this.render();
   }
@@ -18,8 +18,9 @@ class CardComponent extends Component implements CardComponentStructure {
     <h3>${this.pokemon.name}</h3>
       <ul class= card-information__list>
         <li>Nº${this.pokemon.id}</li>
-        
-        <li>Type: ${this.pokemon.types[0].type.name}</li>   
+        <li>${this.pokemon.weight}lb</li>
+        <li>${this.pokemon.height}inch</li>
+                <li>Type: ${this.pokemon.types[0].type.name}</li>   
       </ul>
     </div>`;
     return this.element.innerHTML;

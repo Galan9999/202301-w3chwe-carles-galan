@@ -1,16 +1,11 @@
+import type { PokemonInfoStructure } from "../PokemonInfo/types.js";
+
 export interface ComponentStructure {
-  domElement: Element;
+  element: Element;
   render: () => void;
   addListeners?: () => void;
 }
 
-export interface PokemonDataStructure {
-  count: number;
-  next: string;
-  results: PokemonInfo[];
-}
-
-export interface PokemonInfo {
-  name: string;
-  url: string;
+export interface CardComponentStructure {
+  pokemon: PokemonInfoStructure;
 }

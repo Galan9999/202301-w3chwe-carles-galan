@@ -1,0 +1,79 @@
+@import url(source-sans-pro/400.css);
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+html {
+  font-family: "Source Sans Pro" sans-serif;
+  font-size: 1rem;
+}
+
+body {
+  background-color: #f7c545;
+  background-image: url(./1174048.jpg);
+  background-size: cover;
+  background-size: contain;
+}
+
+a,
+:active,
+:hover,
+:focus,
+:visited {
+  text-decoration: none;
+}
+
+.root {
+  padding: 20px 80px;
+}
+
+.pokedex-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 50px;
+}
+
+.pokemon_card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: flex-start;
+  padding: 60px 0;
+}
+
+.card {
+  border-radius: 10px;
+  background-color: rgb(215, 237, 241);
+  width: 100%;
+  height: 160px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  box-shadow: rgb(62, 62, 62) 10px 7px 15px;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+.pokemon-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+}
+.card:hover {
+  background-color: rgb(155, 172, 140);
+  transform: translate(10px);
+  cursor: pointer;
+}

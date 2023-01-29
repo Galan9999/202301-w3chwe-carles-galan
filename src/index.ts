@@ -9,17 +9,17 @@ const root = document.querySelector(".root");
 const headerComponent = new HeaderComponent(root);
 headerComponent.render();
 
-const container = new Component(root, "div", "container");
+const container = new Component(root, "container", "div");
 container.render();
 
 const section = new Component(
   container.element,
-  "section",
-  "pokemon_card-container"
+  "pokemon_card-container",
+  "section"
 );
 section.render();
 
-const pokemonList = new Component(section.element, "ul", "pokemon-list");
+const pokemonList = new Component(section.element, "pokemon-list", "ul");
 pokemonList.render();
 
 (async () => {

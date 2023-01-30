@@ -1,4 +1,4 @@
-import type { PokemonInfoStructure } from "../PokemonInfo/types.js";
+import type { PokemonInfoStructure } from "../PokemonInfo/types";
 
 export interface ComponentStructure {
   element: Element;
